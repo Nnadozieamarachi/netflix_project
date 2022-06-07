@@ -1,13 +1,37 @@
+.gradiant-background{
+  min-height:100%;
+  background:linear-gradient(0deg, rgba(2, 2, 2, 0.925), rgba(12, 10, 11, 0.918)), url(http://lorempixel.com/800/600/nature/2);
+  background-size:cover;
+}
 .hero-wrapper {
   /*max-width: 100%;
  max-height: 100%;
  display: block;*/
-  background-image: url("netflix_background.jpg");
-  width: 100%;
-  height: 1000px;
-  background-size: cover;
 
-  background-repeat: no-repeat;
+ 
+ background-image: url("netflix_background.jpg");
+ width: 100%;
+ height: 1000px;
+ background-size: cover;
+ background-repeat: no-repeat;
+ /* min-height:100%;
+ background:linear-gradient(0deg, rgba(20, 20, 20, 0.3), rgba(8, 8, 8, 0.767)), url(http://lorempixel.com/800/600/nature/2);
+ background-size:cover; */
+}
+.img-gradient{
+  background: rgba(0,0,0,.4);
+  background-image: linear-gradient(to top, rgba(0,0,0,.8) 0, rgba(0,0,0,0)60%, rgba(0,0,0,.8) 100%);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: block;
+  height: 1010px;
+  color: #fff;
+  font-size: 16px;
+  direction: 1tr;
+  -webkit-text-size-adjust: 100%;
 }
 .nav-wrapper {
   display: flex;
@@ -29,6 +53,7 @@ div .netflix-logo {
   top: 50px;
 }
 .hero-title {
+  
   font-size: 4rem;
   max-width: 800px;
   line-height: 1.1;
@@ -48,6 +73,7 @@ div .netflix-logo {
   color: #fff;
   font-family: "netflix sans", "helvetica neue", helvetica, arial, sans-serif;
 }
+
 .our-story-card {
   position: relative;
   width: 100%;
@@ -172,6 +198,9 @@ div .netflix-logo {
   color: #fff;
 }
 .card-title {
+  position: relative;
+  left: 250px;
+  max-width: 51%;
   font-size: 3.125rem;
   line-height: 1.1;
   margin-bottom: 0.5rem;
@@ -185,6 +214,9 @@ div .netflix-logo {
   font-family: "netflix sans", "helvetica neue", helvetica, arial, sans-serif;
 }
 .card-subtitle {
+  position: relative;
+  left: 250px;
+  max-width: 55%;
   font-size: 1.625rem;
   font-weight: 400;
   margin: 0.75em 0 0.25em;
@@ -195,6 +227,10 @@ div .netflix-logo {
   margin-inline-end: 0px;
   color: #fff;
   font-family: "netflix sans", "helvetica neue", helvetica, arial, sans-serif;
+}
+.tv-image{
+  position: relative;
+  right: 200px;
 }
 .content-wrapper {
   display: flex;
@@ -240,6 +276,8 @@ div .netflix-logo {
 /* .stranger-things { */
   /* width: 60px; */
 .download-text {
+   position: relative;
+   right: 180px;
     font-size: 3.125rem;
     line-height: 1.1;
     margin-bottom: 0.5rem;
@@ -260,6 +298,8 @@ div .netflix-logo {
   }
 
 .download-subtext {
+  position: relative;
+  right: 180px;
   font-size: 1.625rem;
   font-weight: 400;
   margin: 0.75em 0 0.25em;
@@ -393,6 +433,8 @@ padding-left: 0%;
 align-items: center;
 }
 .faq-list{
+  position: relative;
+  right: 45px;
   width: 75%;
   margin: 2em auto;
   max-width: 815px;
@@ -477,6 +519,7 @@ align-items: center;
 .email-container{
   width: 100%;
   align-items: center;
+  margin-bottom: 100px;
 }
 .faq-container{
   width: 100%;
@@ -491,5 +534,84 @@ align-items: center;
 }
 .questions{
   position: relative;
-  left: 130px;
+  left: 50px;
+  
+}
+.site-footer-wrapper{
+  position: relative;
+  border-bottom: none;
+  padding-bottom: 0;
+  padding: 70px 45px;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: block;
+  font-family: "netflix sans", "helvetica neue", helvetica, arial, sans-serif;
+
+}
+.footer-card{
+  margin-top: 0;
+  min-width: 190px;
+  width: 100%;
+  padding-bottom: 20px;
+  font-size: 1em;
+  color: #757575;
+  position: relative;
+  display: block;
+  font-family: "netflix sans", "helvetica neue", helvetica,arial, sans-serif;
+  direction: 1tr;
+}
+.footer-divider{
+  display: none;
+  height: 0;
+  width: 100%;
+  border-top: 1px solid #e5e5e5;
+  font-size: 1em;
+  color: #757575;
+  font-family: "netflix sans", "helvetica neue", helvetica,arial, sans-serif;
+  direction: 1tr;
+}
+.site-footer{
+  padding-top: 0;
+  /* margin: auto; */
+  width: 90%;
+  display: block;
+  font-size: 1em;
+  color: #757575;
+  font-family: "netflix sans", "helvetica neue", helvetica,arial, sans-serif;
+}
+.footer-top{
+  padding: 0;
+  margin: 0 0 30px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 1em;
+  color: #757575;
+  font-family: "netflix sans", "helvetica neue", helvetica,arial, sans-serif;
+}
+.footer-top-a{
+  color:#757575;
+  text-decoration: none;
+ background-color: transparent;
+ font-family: "netflix sans", "helvetica neue", helvetica,arial, sans-serif;
+ margin: 50px;
+}
+.footer-links{
+  /* width: 1000px; */
+  display: flex;
+  justify-content: space-around;
+  /* flex-wrap: wrap; */
+  list-style: none;
+  margin-bottom: 0;
+
+}
+.links{
+  width: 200px;
+   /* display: inline-block; */
+  /* margin: 0 70px; */
+}
+.row4{
+  width: 50% ;
 }
